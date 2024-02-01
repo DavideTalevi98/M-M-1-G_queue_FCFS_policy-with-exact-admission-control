@@ -1,0 +1,71 @@
+file 235387 1706781869                                          
+version 2
+run General-366-20240201-11:04:29-40057
+attr configname General
+attr datetime 20240201-11:04:29
+attr experiment General
+attr inifile main.ini
+attr iterationvars "$0=1.0, $1=1.7, $2=30"
+attr iterationvarsf 1.0,1.7,30-
+attr measurement "$0=1.0, $1=1.7, $2=30"
+attr network Rete
+attr processid 40057
+attr repetition 6
+attr replication #6
+attr resultdir results
+attr runnumber 366
+attr seedset 366
+param Rete.lambda 1.0
+param Rete.a 0.3s
+param Rete.b 1.7s
+param Rete.c 0.1s
+param Rete.d 0.3s
+param Rete.mu 3.0
+param Rete.source2.interArrivalTime exponential(1s/lambda)
+param Rete.source2.jobServiceTime exponential(1s/mu)
+param Rete.source2.deadline uniform(a,b)
+param Rete.server2.j 30
+param Rete.server2.V uniform(c,d)
+
+vector 0 Rete.passiveQueue queueLength:vector ETV
+attr interpolationmode sample-hold
+attr title "queue length, vector"
+vector 1 Rete.sink lifeTime:vector ETV
+attr interpolationmode none
+attr title "lifetime of arrived jobs, vector"
+attr unit s
+vector 2 Rete.sink totalQueueingTime:vector ETV
+attr interpolationmode none
+attr title "the total time spent in queues by arrived jobs, vector"
+attr unit s
+vector 3 Rete.sink queuesVisited:vector ETV
+attr interpolationmode none
+attr title "the total number of queues visited by arrived jobs, vector"
+vector 4 Rete.sink totalServiceTime:vector ETV
+attr interpolationmode none
+attr title "the total time spent  by arrived jobs, vector"
+attr unit s
+vector 5 Rete.sink totalDelayTime:vector ETV
+attr interpolationmode none
+attr title "the total time spent in delay nodes by arrived jobs, vector"
+attr unit s
+vector 6 Rete.sink delaysVisited:vector ETV
+attr interpolationmode none
+attr title "the total number of delays visited by arrived jobs, vector"
+vector 7 Rete.sink generation:vector ETV
+attr interpolationmode none
+attr title "the generation of the arrived jobs, vector"
+vector 8 Rete.passiveQueue queueingTime:vector ETV
+attr interpolationmode none
+attr title "queueing time at dequeue, vector"
+attr unit s
+0	1982 9921 0 5230 0 994.303484738819 389 0 3 244 306
+1	11903 40158 5 5244 0.299000992312 997.742656212964 1042 0.188245364055 0.716596112408 220.04744160762 50.579430139361
+2	52061 29139 5 5244 0.299000992312 997.742656212964 1042 0 0.528350748353 23.895772262306 4.6582510356714
+3	81200 26636 5 5244 0.299000992312 997.742656212964 1042 0 2 388 776
+4	107836 40182 5 5244 0.299000992312 997.742656212964 1042 0.188245364055 0.188245364055 196.15166934531 36.924642405903
+5	148018 26636 5 5244 0.299000992312 997.742656212964 1042 0 0 0 0
+6	174654 26636 5 5244 0.299000992312 997.742656212964 1042 0 0 0 0
+7	201290 26636 5 5244 0.299000992312 997.742656212964 1042 0 0 0 0
+8	227926 7460 21 5230 4.113148861429 994.303484738819 194 0.00025019969 0.528350748353 23.895772262306 4.6582510356714
+

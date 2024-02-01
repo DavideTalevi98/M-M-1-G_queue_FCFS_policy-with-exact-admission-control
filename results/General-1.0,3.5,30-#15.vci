@@ -1,0 +1,71 @@
+file 210505 1706781871                                          
+version 2
+run General-435-20240201-11:04:31-40057
+attr configname General
+attr datetime 20240201-11:04:31
+attr experiment General
+attr inifile main.ini
+attr iterationvars "$0=1.0, $1=3.5, $2=30"
+attr iterationvarsf 1.0,3.5,30-
+attr measurement "$0=1.0, $1=3.5, $2=30"
+attr network Rete
+attr processid 40057
+attr repetition 15
+attr replication #15
+attr resultdir results
+attr runnumber 435
+attr seedset 435
+param Rete.lambda 1.0
+param Rete.a 0.3s
+param Rete.b 3.5s
+param Rete.c 0.1s
+param Rete.d 0.3s
+param Rete.mu 3.0
+param Rete.source2.interArrivalTime exponential(1s/lambda)
+param Rete.source2.jobServiceTime exponential(1s/mu)
+param Rete.source2.deadline uniform(a,b)
+param Rete.server2.j 30
+param Rete.server2.V uniform(c,d)
+
+vector 0 Rete.passiveQueue queueLength:vector ETV
+attr interpolationmode sample-hold
+attr title "queue length, vector"
+vector 1 Rete.passiveQueue queueingTime:vector ETV
+attr interpolationmode none
+attr title "queueing time at dequeue, vector"
+attr unit s
+vector 2 Rete.sink lifeTime:vector ETV
+attr interpolationmode none
+attr title "lifetime of arrived jobs, vector"
+attr unit s
+vector 3 Rete.sink totalQueueingTime:vector ETV
+attr interpolationmode none
+attr title "the total time spent in queues by arrived jobs, vector"
+attr unit s
+vector 4 Rete.sink queuesVisited:vector ETV
+attr interpolationmode none
+attr title "the total number of queues visited by arrived jobs, vector"
+vector 5 Rete.sink totalServiceTime:vector ETV
+attr interpolationmode none
+attr title "the total time spent  by arrived jobs, vector"
+attr unit s
+vector 6 Rete.sink totalDelayTime:vector ETV
+attr interpolationmode none
+attr title "the total time spent in delay nodes by arrived jobs, vector"
+attr unit s
+vector 7 Rete.sink delaysVisited:vector ETV
+attr interpolationmode none
+attr title "the total number of delays visited by arrived jobs, vector"
+vector 8 Rete.sink generation:vector ETV
+attr interpolationmode none
+attr title "the generation of the arrived jobs, vector"
+0	1984 22539 0 4697 0 994.355638740446 883 0 4 697 1041
+1	24523 16951 6 4697 3.233006026001 994.355638740446 441 0.001450673387 0.816460540659 135.81506324113 54.882573289886
+2	41474 31234 7 4715 3.233006026001 999.668368921871 811 0.526779114823 0.83824796472 466.4118344463 274.79313419659
+3	72708 23683 7 4715 3.233006026001 999.668368921871 811 0 0.311468849897 39.193972324847 8.4505548563092
+4	96391 20714 7 4715 3.233006026001 999.668368921871 811 0 2 460 920
+5	117105 31257 7 4715 3.233006026001 999.668368921871 811 0.526779114823 0.526779114823 427.21786212145 225.04944724492
+6	148362 20714 7 4715 3.233006026001 999.668368921871 811 0 0 0 0
+7	169076 20714 7 4715 3.233006026001 999.668368921871 811 0 0 0 0
+8	189790 20714 7 4715 3.233006026001 999.668368921871 811 0 0 0 0
+

@@ -1,0 +1,633 @@
+version 2
+run General-114-20240201-11:04:19-40057
+attr configname General
+attr datetime 20240201-11:04:19
+attr experiment General
+attr inifile main.ini
+attr iterationvars "$0=2.0, $1=3.5, $2=70"
+attr iterationvarsf 2.0,3.5,70-
+attr measurement "$0=2.0, $1=3.5, $2=70"
+attr network Rete
+attr processid 40057
+attr repetition 14
+attr replication #14
+attr resultdir results
+attr runnumber 114
+attr seedset 114
+param Rete.lambda 2.0
+param Rete.a 0.3s
+param Rete.b 3.5s
+param Rete.c 0.1s
+param Rete.d 0.3s
+param Rete.mu 3.0
+param Rete.source2.interArrivalTime exponential(1s/lambda)
+param Rete.source2.jobServiceTime exponential(1s/mu)
+param Rete.source2.deadline uniform(a,b)
+param Rete.server2.j 70
+param Rete.server2.V uniform(c,d)
+
+scalar Rete.source2 created:last 2053
+attr interpolationmode none
+attr title "the number of jobs created, last"
+statistic Rete.source2 "created: histogram"
+field count 1
+field mean 2053
+field stddev nan
+field min 2053
+field max 2053
+field sum 2053
+field sqrsum 4214809
+attr interpolationmode none
+attr title "the number of jobs created,  histogram"
+bin	-inf	0
+bin	2052	0
+bin	2053	1
+bin	2054	0
+scalar Rete.sink totalJobsDiscarded 1180
+scalar Rete.sink totalJobsDone 872
+scalar Rete.sink generation:mean 0
+attr interpolationmode none
+attr title "the generation of the arrived jobs, mean"
+scalar Rete.sink generation:max 0
+attr interpolationmode none
+attr title "the generation of the arrived jobs, max"
+statistic Rete.sink "generation: histogram"
+field count 872
+field mean 0
+field stddev 0
+field min 0
+field max 0
+field sum 0
+field sqrsum 0
+attr interpolationmode none
+attr title "the generation of the arrived jobs,  histogram"
+bin	-inf	0
+bin	-0.5	0
+bin	-0.48	0
+bin	-0.46	0
+bin	-0.44	0
+bin	-0.42	0
+bin	-0.4	0
+bin	-0.38	0
+bin	-0.36	0
+bin	-0.34	0
+bin	-0.32	0
+bin	-0.3	0
+bin	-0.28	0
+bin	-0.26	0
+bin	-0.24	0
+bin	-0.22	0
+bin	-0.2	0
+bin	-0.18	0
+bin	-0.16	0
+bin	-0.14	0
+bin	-0.12	0
+bin	-0.1	0
+bin	-0.08	0
+bin	-0.06	0
+bin	-0.04	0
+bin	-0.02	0
+bin	0	872
+bin	0.02	0
+bin	0.04	0
+bin	0.06	0
+bin	0.08	0
+bin	0.1	0
+bin	0.12	0
+bin	0.14	0
+bin	0.16	0
+bin	0.18	0
+bin	0.2	0
+bin	0.22	0
+bin	0.24	0
+bin	0.26	0
+bin	0.28	0
+bin	0.3	0
+bin	0.32	0
+bin	0.34	0
+bin	0.36	0
+bin	0.38	0
+bin	0.4	0
+bin	0.42	0
+bin	0.44	0
+bin	0.46	0
+bin	0.48	0
+bin	0.5	0
+scalar Rete.sink delaysVisited:mean 0
+attr interpolationmode none
+attr title "the total number of delays visited by arrived jobs, mean"
+scalar Rete.sink delaysVisited:max 0
+attr interpolationmode none
+attr title "the total number of delays visited by arrived jobs, max"
+statistic Rete.sink "delaysVisited: histogram"
+field count 872
+field mean 0
+field stddev 0
+field min 0
+field max 0
+field sum 0
+field sqrsum 0
+attr interpolationmode none
+attr title "the total number of delays visited by arrived jobs,  histogram"
+bin	-inf	0
+bin	-0.5	0
+bin	-0.48	0
+bin	-0.46	0
+bin	-0.44	0
+bin	-0.42	0
+bin	-0.4	0
+bin	-0.38	0
+bin	-0.36	0
+bin	-0.34	0
+bin	-0.32	0
+bin	-0.3	0
+bin	-0.28	0
+bin	-0.26	0
+bin	-0.24	0
+bin	-0.22	0
+bin	-0.2	0
+bin	-0.18	0
+bin	-0.16	0
+bin	-0.14	0
+bin	-0.12	0
+bin	-0.1	0
+bin	-0.08	0
+bin	-0.06	0
+bin	-0.04	0
+bin	-0.02	0
+bin	0	872
+bin	0.02	0
+bin	0.04	0
+bin	0.06	0
+bin	0.08	0
+bin	0.1	0
+bin	0.12	0
+bin	0.14	0
+bin	0.16	0
+bin	0.18	0
+bin	0.2	0
+bin	0.22	0
+bin	0.24	0
+bin	0.26	0
+bin	0.28	0
+bin	0.3	0
+bin	0.32	0
+bin	0.34	0
+bin	0.36	0
+bin	0.38	0
+bin	0.4	0
+bin	0.42	0
+bin	0.44	0
+bin	0.46	0
+bin	0.48	0
+bin	0.5	0
+scalar Rete.sink queuesVisited:mean 0.12155963302752
+attr interpolationmode none
+attr title "the total number of queues visited by arrived jobs, mean"
+scalar Rete.sink queuesVisited:max 2
+attr interpolationmode none
+attr title "the total number of queues visited by arrived jobs, max"
+statistic Rete.sink "queuesVisited: histogram"
+field count 872
+field mean 0.12155963302752
+field stddev 0.47812622079006
+field min 0
+field max 2
+field sum 106
+field sqrsum 212
+attr interpolationmode none
+attr title "the total number of queues visited by arrived jobs,  histogram"
+bin	-inf	0
+bin	0	819
+bin	1	0
+bin	2	53
+bin	3	0
+scalar Rete.sink totalServiceTime:mean 0.676871795865
+attr interpolationmode none
+attr title "the total time spent  by arrived jobs, mean"
+attr unit s
+scalar Rete.sink totalServiceTime:max 0.676871795865
+attr interpolationmode none
+attr title "the total time spent  by arrived jobs, max"
+attr unit s
+statistic Rete.sink "totalServiceTime: histogram"
+field count 872
+field mean 0.676871795865
+field stddev 0
+field min 0.676871795865
+field max 0.676871795865
+field sum 590.23220599428
+field sqrsum 399.51153324871
+attr interpolationmode none
+attr title "the total time spent  by arrived jobs,  histogram"
+attr unit s
+bin	-inf	0
+bin	0.16	0
+bin	0.18	0
+bin	0.2	0
+bin	0.22	0
+bin	0.24	0
+bin	0.26	0
+bin	0.28	0
+bin	0.3	0
+bin	0.32	0
+bin	0.34	0
+bin	0.36	0
+bin	0.38	0
+bin	0.4	0
+bin	0.42	0
+bin	0.44	0
+bin	0.46	0
+bin	0.48	0
+bin	0.5	0
+bin	0.52	0
+bin	0.54	0
+bin	0.56	0
+bin	0.58	0
+bin	0.6	0
+bin	0.62	0
+bin	0.64	0
+bin	0.66	872
+bin	0.68	0
+bin	0.7	0
+bin	0.72	0
+bin	0.74	0
+bin	0.76	0
+bin	0.78	0
+bin	0.8	0
+bin	0.82	0
+bin	0.84	0
+bin	0.86	0
+bin	0.88	0
+bin	0.9	0
+bin	0.92	0
+bin	0.94	0
+bin	0.96	0
+bin	0.98	0
+bin	1	0
+bin	1.02	0
+bin	1.04	0
+bin	1.06	0
+bin	1.08	0
+bin	1.1	0
+bin	1.12	0
+bin	1.14	0
+bin	1.16	0
+bin	1.18	0
+scalar Rete.sink totalDelayTime:mean 0
+attr interpolationmode none
+attr title "the total time spent in delay nodes by arrived jobs, mean"
+attr unit s
+scalar Rete.sink totalDelayTime:max 0
+attr interpolationmode none
+attr title "the total time spent in delay nodes by arrived jobs, max"
+attr unit s
+statistic Rete.sink "totalDelayTime: histogram"
+field count 872
+field mean 0
+field stddev 0
+field min 0
+field max 0
+field sum 0
+field sqrsum 0
+attr interpolationmode none
+attr title "the total time spent in delay nodes by arrived jobs,  histogram"
+attr unit s
+bin	-inf	0
+bin	-0.5	0
+bin	-0.48	0
+bin	-0.46	0
+bin	-0.44	0
+bin	-0.42	0
+bin	-0.4	0
+bin	-0.38	0
+bin	-0.36	0
+bin	-0.34	0
+bin	-0.32	0
+bin	-0.3	0
+bin	-0.28	0
+bin	-0.26	0
+bin	-0.24	0
+bin	-0.22	0
+bin	-0.2	0
+bin	-0.18	0
+bin	-0.16	0
+bin	-0.14	0
+bin	-0.12	0
+bin	-0.1	0
+bin	-0.08	0
+bin	-0.06	0
+bin	-0.04	0
+bin	-0.02	0
+bin	0	872
+bin	0.02	0
+bin	0.04	0
+bin	0.06	0
+bin	0.08	0
+bin	0.1	0
+bin	0.12	0
+bin	0.14	0
+bin	0.16	0
+bin	0.18	0
+bin	0.2	0
+bin	0.22	0
+bin	0.24	0
+bin	0.26	0
+bin	0.28	0
+bin	0.3	0
+bin	0.32	0
+bin	0.34	0
+bin	0.36	0
+bin	0.38	0
+bin	0.4	0
+bin	0.42	0
+bin	0.44	0
+bin	0.46	0
+bin	0.48	0
+bin	0.5	0
+scalar Rete.sink totalQueueingTime:mean 0.00081814391956537
+attr interpolationmode none
+attr title "the total time spent in queues by arrived jobs, mean"
+attr unit s
+scalar Rete.sink totalQueueingTime:max 0.027420839102
+attr interpolationmode none
+attr title "the total time spent in queues by arrived jobs, max"
+attr unit s
+statistic Rete.sink "totalQueueingTime: histogram"
+field count 872
+field mean 0.00081814391956537
+field stddev 0.003747065750948
+field min 0
+field max 0.027420839102
+field sum 0.713421497861
+field sqrsum 0.012812958477781
+attr interpolationmode none
+attr title "the total time spent in queues by arrived jobs,  histogram"
+attr unit s
+bin	-inf	0
+bin	0	821
+bin	0.0005	0
+bin	0.001	3
+bin	0.0015	1
+bin	0.002	0
+bin	0.0025	0
+bin	0.003	1
+bin	0.0035	3
+bin	0.004	0
+bin	0.0045	1
+bin	0.005	0
+bin	0.0055	1
+bin	0.006	0
+bin	0.0065	0
+bin	0.007	0
+bin	0.0075	0
+bin	0.008	2
+bin	0.0085	1
+bin	0.009	2
+bin	0.0095	3
+bin	0.01	0
+bin	0.0105	1
+bin	0.011	2
+bin	0.0115	0
+bin	0.012	1
+bin	0.0125	2
+bin	0.013	1
+bin	0.0135	1
+bin	0.014	1
+bin	0.0145	0
+bin	0.015	0
+bin	0.0155	2
+bin	0.016	1
+bin	0.0165	3
+bin	0.017	2
+bin	0.0175	0
+bin	0.018	0
+bin	0.0185	0
+bin	0.019	1
+bin	0.0195	1
+bin	0.02	1
+bin	0.0205	1
+bin	0.021	3
+bin	0.0215	2
+bin	0.022	0
+bin	0.0225	1
+bin	0.023	1
+bin	0.0235	0
+bin	0.024	1
+bin	0.0245	0
+bin	0.025	1
+bin	0.0255	0
+bin	0.026	0
+bin	0.0265	0
+bin	0.027	3
+bin	0.0275	0
+bin	0.028	0
+bin	0.0285	0
+scalar Rete.sink lifeTime:mean 0.67768993978457
+attr interpolationmode none
+attr title "lifetime of arrived jobs, mean"
+attr unit s
+scalar Rete.sink lifeTime:max 0.704292634967
+attr interpolationmode none
+attr title "lifetime of arrived jobs, max"
+attr unit s
+statistic Rete.sink "lifeTime: histogram"
+field count 872
+field mean 0.67768993978457
+field stddev 0.0037470657505072
+field min 0.676871795865
+field max 0.704292634967
+field sum 590.94562749215
+field sqrsum 400.49013598812
+attr interpolationmode none
+attr title "lifetime of arrived jobs,  histogram"
+attr unit s
+bin	-inf	0
+bin	0.671	0
+bin	0.6715	0
+bin	0.672	0
+bin	0.6725	0
+bin	0.673	0
+bin	0.6735	0
+bin	0.674	0
+bin	0.6745	0
+bin	0.675	0
+bin	0.6755	0
+bin	0.676	0
+bin	0.6765	819
+bin	0.677	2
+bin	0.6775	0
+bin	0.678	3
+bin	0.6785	1
+bin	0.679	0
+bin	0.6795	1
+bin	0.68	1
+bin	0.6805	2
+bin	0.681	0
+bin	0.6815	1
+bin	0.682	1
+bin	0.6825	0
+bin	0.683	0
+bin	0.6835	0
+bin	0.684	0
+bin	0.6845	0
+bin	0.685	2
+bin	0.6855	2
+bin	0.686	2
+bin	0.6865	2
+bin	0.687	0
+bin	0.6875	3
+bin	0.688	0
+bin	0.6885	1
+bin	0.689	0
+bin	0.6895	2
+bin	0.69	1
+bin	0.6905	1
+bin	0.691	1
+bin	0.6915	0
+bin	0.692	0
+bin	0.6925	2
+bin	0.693	3
+bin	0.6935	1
+bin	0.694	2
+bin	0.6945	0
+bin	0.695	0
+bin	0.6955	0
+bin	0.696	1
+bin	0.6965	1
+bin	0.697	1
+bin	0.6975	3
+bin	0.698	2
+bin	0.6985	1
+bin	0.699	0
+bin	0.6995	1
+bin	0.7	1
+bin	0.7005	0
+bin	0.701	1
+bin	0.7015	0
+bin	0.702	1
+bin	0.7025	0
+bin	0.703	0
+bin	0.7035	0
+bin	0.704	3
+bin	0.7045	0
+bin	0.705	0
+bin	0.7055	0
+scalar Rete.passiveQueue queueingTime:mean 0.34048328213626
+attr interpolationmode none
+attr title "queueing time at dequeue, mean"
+attr unit s
+scalar Rete.passiveQueue queueingTime:max 0.927313780573
+attr interpolationmode none
+attr title "queueing time at dequeue, max"
+attr unit s
+statistic Rete.passiveQueue "queueingTime: histogram"
+field count 1233
+field mean 0.34048328213626
+field stddev 0.20038069537448
+field min 0.000424099911
+field max 0.927313780573
+field sum 419.81588687401
+field sqrsum 192.40807628884
+attr interpolationmode none
+attr title "queueing time at dequeue,  histogram"
+attr unit s
+bin	-inf	0
+bin	0	39
+bin	0.02	35
+bin	0.04	31
+bin	0.06	37
+bin	0.08	44
+bin	0.1	32
+bin	0.12	40
+bin	0.14	38
+bin	0.16	35
+bin	0.18	38
+bin	0.2	32
+bin	0.22	39
+bin	0.24	34
+bin	0.26	24
+bin	0.28	47
+bin	0.3	40
+bin	0.32	34
+bin	0.34	39
+bin	0.36	41
+bin	0.38	42
+bin	0.4	37
+bin	0.42	32
+bin	0.44	33
+bin	0.46	37
+bin	0.48	35
+bin	0.5	35
+bin	0.52	25
+bin	0.54	31
+bin	0.56	39
+bin	0.58	29
+bin	0.6	29
+bin	0.62	31
+bin	0.64	46
+bin	0.66	41
+bin	0.68	3
+bin	0.7	1
+bin	0.72	1
+bin	0.74	0
+bin	0.76	0
+bin	0.78	2
+bin	0.8	2
+bin	0.82	1
+bin	0.84	0
+bin	0.86	1
+bin	0.88	0
+bin	0.9	0
+bin	0.92	1
+bin	0.94	0
+bin	0.96	0
+bin	0.98	0
+bin	1	0
+bin	1.02	0
+bin	1.04	0
+bin	1.06	0
+bin	1.08	0
+scalar Rete.passiveQueue queueLength:timeavg 0.41981588687401
+attr interpolationmode sample-hold
+attr title "queue length, timeavg"
+scalar Rete.passiveQueue queueLength:max 7
+attr interpolationmode sample-hold
+attr title "queue length, max"
+statistic Rete.passiveQueue "queueLength: histogram"
+field count 2467
+field mean 1.1978111066072
+field stddev 1.0658505431641
+field min 0
+field max 7
+field sum 2955
+field sqrsum 6341
+attr interpolationmode sample-hold
+attr title "queue length,  histogram"
+bin	-inf	0
+bin	0	665
+bin	1	1028
+bin	2	510
+bin	3	184
+bin	4	54
+bin	5	19
+bin	6	5
+bin	7	2
+bin	8	0
+scalar Rete.passiveQueue dropped:count 0
+attr interpolationmode none
+attr title "drop event, count"
+statistic Rete.passiveQueue "dropped: histogram"
+field count 0
+field mean nan
+field stddev nan
+field min nan
+field max nan
+field sum 0
+field sqrsum 0
+attr interpolationmode none
+attr title "drop event,  histogram"
+bin	-inf	0
+bin	0	0
+bin	1	0
+
